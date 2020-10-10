@@ -1,3 +1,3 @@
-# project-1
+# project-1(Just Training)
 
 Just Training
