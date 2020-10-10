@@ -1,0 +1,601 @@
+body {
+    overflow-x: hidden;
+}
+body::selection{
+    color: white !important;
+}
+::selection {
+    background-color: #57CBCC;
+}
+
+/* ----------------start open-page section ----------------- */
+
+.open-page {
+    background-image: url("../img/0.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.open-page::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.open-page .container {
+    padding: 19% 0%;
+}
+
+.open-page h1 {
+    color: white;
+    font-weight: 500;
+    font-size: 88px;
+}
+
+.open-page p {
+    color: white;
+    font-size: 18px;
+    padding: 10px 75px;
+}
+
+.open-page button {
+    border: 1px solid white;
+    padding: 10px 35px;
+    color: white;
+    font-weight: 500;
+    background-color: transparent;
+    transition: 0.8s;
+    outline: none;
+}
+
+.open-page button:hover {
+    background-color: #097C7E;
+}
+
+/* ------------end open-page --------------------- */
+
+/* -----------start navbar---------- */
+
+.navbar {
+    background-color: #1D2024 !important;
+    padding: 0px;
+}
+
+.navbar .navbar-brand i {
+    color: #57CBCC;
+}
+
+.navbar .nav-link {
+    color: #4f545a !important;
+    font-weight: 500;
+    padding: 20px 17px !important;
+    transition: 1s;
+}
+.navbar .nav-link:hover{
+    background-color: #57CBCC;
+    color: white !important;
+}
+.navbar .navbar-toggler {
+    border: #57CBCC 1px solid;
+    outline: none;
+}
+
+.navbar .navbar-toggler i {
+    color: #57CBCC !important;
+    padding: 2px;
+}
+
+/* ---------end navbar ------------------ */
+
+/* ----------start abour us section */
+
+.about-us {
+    background-color: #353B43;
+    padding: 70px 0px;
+}
+
+.borderr {
+    border-top: 1px solid #515858;
+    width: 300px;
+    height: 1px;
+    margin: 15px auto 0;
+    position: relative;
+}
+
+.borderr::before {
+    width: 40px;
+    position: absolute;
+    top: -3px;
+    left: 45%;
+    content: '';
+    border-top: 5px solid #57CBCC;
+    margin: auto;
+}
+
+.about-us .boxx {
+    background-color: #242930;
+    padding: 35px 0px;
+    transition: all 0.4s ease-in-out;
+    margin-bottom: 0px;
+}
+
+.about-us .boxx i {
+    color: #59636C;
+    transition: 0.8s;
+}
+
+.about-us .boxx h2 {
+    color: white;
+}
+
+.about-us .boxx p {
+    color: white;
+}
+
+.about-us .boxx:hover i {
+    transform: translatey(-15px);
+}
+
+.about-us .boxx:hover {
+    border-bottom: 3px solid #57CBCC;
+}
+
+.more-about {
+    background-color: #242930;
+}
+
+.more-about h2, h4 {
+    color: #AFBAC4;
+}
+
+.more-about p {
+    color: #AFBAC4;
+    font-size: 14px;
+}
+
+.more-about i {
+    color: #57CBCC;
+}
+
+/* .container-fluid{padding: 0px;} */
+
+.aa {
+    background-image: url("../img/2.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 80px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.aa::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: '';
+    background-color: rgb(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+.aa button {
+    border: 1px solid transparent;
+    padding: 5px 25px;
+    background-color: #57CBCC;
+    outline: none;
+    color: white;
+}
+
+/* ----------end abour us section */
+
+/* -------------start services section---------- */
+
+.servies {
+    background-color: #353B43;
+    padding: 70px 0px;
+}
+
+.servies .servies-box {
+    padding: 35px 5px;
+    margin-top: 50px;
+    background-color: #353B43;
+    border-top: 1px solid #66727C;
+    border-left: 1px solid #66727C;
+    position: relative;
+    z-index: 2;
+    box-shadow: 12px 12px 0px #BFC1C3;
+}
+
+.servies .servies-box i {
+    color: #66727C;
+}
+
+.servies .servies-box h2 {
+    color: #AFBAC4;
+}
+
+.servies .servies-box p {
+    color: #66727C;
+}
+
+.servies-OurSkills {
+    background-color: #252B31;
+    padding: 70px 0px;
+}
+
+.servies-OurSkills h3 {
+    color: #AFBABB;
+}
+
+.servies-OurSkills p, h5 {
+    color: #66727C;
+}
+
+.servies-OurSkills .progress {
+    height: 6px !important;
+}
+
+.bg-bluue {
+    background-color: #57CBCC;
+}
+
+/* -------------end services section---------- */
+
+/* ---------------start our work section ----------------------*/
+
+.our-work {
+    background-color: #353B43;
+    padding: 100px 0px;
+}
+
+.our-work .work {
+    border: 1px solid #57CBCC;
+    color: #57CBCC;
+    background-color: #353B43;
+    padding: 7px;
+    margin: 30px 5px;
+    outline: none;
+}
+
+.our-work .img {
+    position: relative;
+}
+
+.our-work .img-det {
+    transition: 0.8s;
+    background-color: white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    padding: 25px 40px;
+    opacity: 0;
+}
+
+.our-work .img:hover .img-det {
+    opacity: 1;
+    transform: rotatex(360deg);
+}
+
+.our-work .img i {
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #57CBCC;
+}
+
+.our-work .img p {
+    color: #838D97;
+}
+
+.aa .div {
+    background-color: #353B43;
+    padding: 25px;
+}
+
+.aa .div p {
+    color: #838D97;
+    font-size: 20px;
+}
+
+.aa .div i {
+    color: #838D97;
+    margin-bottom: 15px;
+}
+
+/* ---------------end our work section-------------------- */
+
+/* --------------start our team section----------------- */
+
+.our-team {
+    background-color: #353B43;
+    padding: 50px 0px;
+}
+
+.our-team .card-imgg {
+    overflow: hidden;
+    position: relative;
+}
+
+.our-team .card-imgg img {
+    transition: 0.7s;
+}
+
+.our-team .card-imgg:hover img {
+    transform: scale(1.15, 1.15) !important;
+}
+
+.our-team .body {
+    background-color: #292F36;
+    padding: 10px;
+}
+
+.our-team .body h5 {
+    color: #AAB5C4;
+}
+
+.our-team .body p {
+    color: #737F8A;
+    font-size: 15px;
+}
+
+.our-team .back-img {
+    background-color: rgb(71, 195, 195, 0.0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    transition: 0.8s;
+
+}
+
+.our-team .back-img i {
+    color: white;
+    border: 1px solid white;
+    width: 40px;
+    padding: 10px;
+    margin-top: 50%;
+}
+.our-team .ab:hover .back-img{
+    opacity: 1;
+    background-color: rgb(71, 195, 195, 0.6);
+    transform: rotatey(360deg) 
+}
+
+.our-team .tablee{
+    margin-top: 200px;
+}
+.our-team .tablee .heaad{
+    color: #57CBCC;
+    font-size: 27px;
+    font-weight: 500px !important;
+}
+.our-team .tablee h3{
+    color: #57CBCC;
+}
+.our-team .tablee h3 span{
+    color: #737F8A;
+    font-size: 18px;
+}
+.table-body{
+    color:#737F8A ;
+    font-size: 15px;
+}
+.table-color-back1{
+    background-color: #292F36;
+}
+.table-color-back2{
+    background-color:#353B43 ;
+}
+.our-team .tablee button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid #66727C;
+    padding: 10px 25px;
+    margin: 20px;
+    font-size: 14px;
+    transition: 0.8s;
+    outline: none;
+}
+.our-team .tablee button:hover{
+    background-color: #57CBCC;
+    border: 1px solid #57CBCC;
+}
+.our-team .tablee .border{
+    border: 1px solid #66727C !important;
+}
+/* --------------end our team section----------------- */
+
+/* ------------------start textemonil--------------- */
+.textemonil{
+    background: url("../img/15.jpg") center center no-repeat fixed;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 70px 0px;
+}
+.textemonil::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color:rgb(0, 0, 0, 0.4) ;
+}
+.textemonil .item{
+    width: 60%;
+    background-color: transparent;
+    margin: auto;
+}
+.textemonil img{
+    width: 130px !important;
+    height: 130px;
+    border-radius: 50%;
+    margin: auto;
+}
+.textemonil h3{
+    margin-top: 15px;
+    color: #A8B2BB;
+    font-size: 24px;
+}
+.textemonil p{
+    color: #999ea1;
+    font-size: 14px;
+}
+.textemonil .par{
+    color: #A8B2BB;
+    font-size: 18px;
+    font-weight: 700px;
+}
+/* -------------end textemonil----------------- */
+
+
+/* -----------start latest-posts---------------- */
+.latest-posts{
+    background-color: #353B43;
+    padding: 90px 0px;
+}
+
+.latest-posts .card{
+    border: none;
+    background-color:#292F36;
+}
+.latest-posts .card h5{
+    color: white;
+}
+.latest-posts .card p{
+    color: #737F8A;
+}
+.latest-posts .card img{
+    height: 260px;
+}
+.latest-posts .card button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid #66727C;
+    padding: 10px 25px;
+    font-size: 14px;
+    transition: 0.8s;
+    outline: none;
+}
+.latest-posts .card button:hover{
+    background-color: #57CBCC;
+    border: 1px solid #57CBCC;
+}
+.latest-posts .a button{
+    background-color: #57CBCC;
+    color: white;
+    border: 1px solid #57CBCC;
+    padding: 10px;
+    font-size: 14px;
+    transition: 0.8s;
+    outline: none;
+    margin-top: 50px;
+}
+.latest-posts .a button a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+.latest-posts button:hover{
+    background-color: #2C9091;
+    border: 1px solid #2C9091;
+}
+/* --------------------end latest-posts---------------- */
+
+
+/* -----------------------start contact us---------------- */
+.contact-us{
+    background-color: #292F36;
+    padding: 80px 0px;
+}
+.contact-us .titeel{
+    color: #d6d8d8;
+    font-size: 27px;
+}
+.contact-us p{
+    color: #575f69;
+}
+.contact-us .icons p{
+    color: #575f69;
+
+}
+.contact-us .icons p i{
+    color: #57CBCC;
+
+}
+.contact-us form input , textarea{
+    width: 100%;
+    border: 1px solid #66727C ;
+    background-color: transparent;
+    padding: 10px;
+    color: white;
+    outline:none;
+}
+.contact-us button{
+    width: 100%;
+    padding: 10px;
+    background-color: #57CBCC;
+    color: white;
+    border: none;
+
+}
+/* -----------------------end contact us---------------- */
+
+/* head name */
+
+.about-us, h1, .servies h1, .servies-OurSkills h1, .our-work h1, .our-team h1 ,.latest-posts h1 , .contact-us h1 {
+    color: white;
+    font-weight: 500;
+}
+
+.about-us h1 span, .servies h1 span, .servies-OurSkills span, .our-work span, .our-team span,.latest-posts span, .contact-us span {
+    color: #57CBCC;
+}
+
+/* --------------- */
+
+
+footer{
+    background-color: #353B43;
+    padding: 30px 0px;
+}
+
+footer .icon-footer{
+    background-color: #292F36;
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    position: relative;
+    transition: 0.5s;
+}
+footer .icon-footer i{
+    color: #353B43;
+    position: absolute;
+    top: 33%;
+    left: 33%;
+}
+
+footer .icon-footer:hover{
+    transform: rotatey(360deg);
+    background-color: #57CBCC;
+}
+footer .icon-footer:hover i{
+    color: white !important;
+}
+
+footer i{
+    color: #57CBCC;
+}
